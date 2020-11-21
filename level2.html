@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div
+        {
+        background-color:blue
+        }
+    </style>
+</head>
+<body >
+    <div id="we">
+    <h1 id="wp" >针不戳</h1>
+    <input type="button" value="换色" onclick="change()">
+    <input type="button" value="换字体" onclick="change12()">
+    </div>
+    <script>
+     var time = 0;var time2=0;
+     let dobody = document.getElementById('we')
+     let sizechange = document.getElementById('wp')
+     function change(){
+     if (time==0) {dobody.style.backgroundColor='white';time=1;}
+     if (time==1) {dobody.style.backgroundColor='yellow';time=2;}
+     if (time==2) {dobody.style.backgroundColor='blue';time=0;}
+     }
+    </script>
+</body>
+</html>
